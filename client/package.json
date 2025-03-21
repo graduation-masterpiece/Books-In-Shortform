@@ -1,0 +1,54 @@
+{
+  "name": "Books in short form",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@testing-library/jest-dom": "^5.17.0",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "axios": "^1.7.9",
+    "dotenv": "^16.4.7",
+    "openai": "^4.76.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^7.0.1",
+    "react-script": "^2.0.5",
+    "react-scripts": "5.0.1",
+    "serverless": "^4.5.0",
+    "web-vitals": "^2.1.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.47",
+    "tailwindcss": "^3.4.14"
+  },
+  "description": "1. DB에 저장된 책 정보를 불러와 이미지 생성, 요약문(소개글) 작성. 다시 DB 에 저장\r 2. 프론트엔드 수정사항 적용\r    - DB 에 저장된 이미지와 글 띄우는 부분은 아직 구현이 안됨 -> SearchBar.js 는 기존 코드 유지 (summarypage 창 띄우기 X)",
+  "main": "handler.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
