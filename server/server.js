@@ -15,8 +15,14 @@ app.use(cors({
 // body-parser 설정
 app.use(express.json());
 
+// 이미지 저장 전 디렉토리 생성
+if (!fs.existsSync('/tmp/generated_images')) {
+  fs.mkdirSync('/tmp/generated_images', { recursive: true });
+}
+
 // 정적 파일 제공 설정
-app.use('/generated_images', express.static(path.join(__dirname, 'generated_images')));
+app.use('/generated_images', express.static(path.join('/tmp', 'generated_images')));
+
 
 // POST 요청 처리
 app.post('/book', async (req, res) => {
